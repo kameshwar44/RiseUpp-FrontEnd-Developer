@@ -1,37 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
 
-.mydiv{
- 
-  margin: 10px 7%;
-  box-shadow: 1px 1px 5px rgb(237, 47, 47);
-  padding: 10px;
-}
-
-input{
-  width: 40%;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.Img_items{
-  width: 20%;
-  margin: 5px;
-}
-
-.btn_container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 11px;
-  
-}
-.btn_container button{
-  margin: 10px;
-  
-}

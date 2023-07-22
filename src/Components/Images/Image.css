@@ -1,0 +1,110 @@
+input {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 20px;
+  padding: 1rem;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+}
+.btn_container button {
+  margin: 10px;
+}
+
+.search_button {
+  margin-left: auto;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.search_button {
+  padding: 0.5rem 1.2rem;
+  margin: 10px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.search_button:hover {
+  background-color: black;
+}
+
+.Category_button {
+  padding: 0.5rem 1.2rem;
+  margin: 10px;
+  border: none;
+  background-color: rgba(200, 0, 255, 0.612);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.skeleton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px;
+  gap: 10px;
+}
+
+.gallery_containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.Img_items {
+  align-items: center;
+  height: 250px;
+  width: 280px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 3px;
+  opacity: 0; /* Initially hide the tooltip */
+  pointer-events: none; /* Make the tooltip invisible */
+  transition: opacity 0.2s ease-in;
+}
+
+.image-container:hover .tooltip {
+  opacity: 1; /* Show the tooltip on hover */
+}
+
+@media only screen and (max-width: 375px) {
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,6 @@
+.shimmer-container {
+  display: flex; /* Add this line to set flex layout */
+  justify-content: space-between; /* Optional: Adjust the spacing between the skeletons */
+  align-items: center; /* Optional: Align the skeletons vertically in the center */
+}
+
