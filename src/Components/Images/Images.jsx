@@ -30,6 +30,7 @@ function Images() {
       setIsLoading(false);
     }
   };
+  
 
   // UseEffect to fetch data when searchQuery or page changes
   useEffect(() => {
@@ -37,6 +38,7 @@ function Images() {
       fetchData(searchQuery, page);             //
     }
   }, [searchQuery, page]);
+
 
   // Function for handling search button clicking
   const handleSearch = (event) => {
@@ -46,6 +48,7 @@ function Images() {
     SetSearchResult(value);                       // Setting the search result text
     setValue("");                                 // And Resetting the input field
   };
+
 
   // Function to handle category selection
   const handleSelection = (category) => {
@@ -63,7 +66,9 @@ function Images() {
           alt=""
         />
       </div>
+
       {/* Search bar Added */}
+
       <div className="search_input_form_containers">
         <input
           placeholder="Search Anything..."
@@ -74,7 +79,9 @@ function Images() {
         <button className="search_button" onClick={handleSearch}>
           Search
         </button>
+
         {/* Category buttons Added */}
+
         <div className="btn_container">
           <button
             className="Category_button"
@@ -102,7 +109,9 @@ function Images() {
           </button>
         </div>
       </div>
+
       {/* Skeleton loader */}
+
       {isLoading ? (
         <div className="skeleton">
           {Array.from({ length: 12 }).map((_, index) => (
@@ -115,7 +124,9 @@ function Images() {
           ))}
         </div>
       ) : (
+
         // Images gallery
+
         <>
           <h2>{SearchResult || " "}</h2>
           <br />
