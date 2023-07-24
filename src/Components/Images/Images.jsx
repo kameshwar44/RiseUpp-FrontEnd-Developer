@@ -84,25 +84,25 @@ function Images() {
 
         <div className="btn_container">
           <button
-            className="Category_button"
+             className="Category_button neon-button neon-button__3"
             onClick={() => handleSelection("Mountain")}
           >
             Mountain
           </button>
           <button
-            className="Category_button"
+             className="Category_button neon-button neon-button__2"
             onClick={() => handleSelection("Flowers")}
           >
             Flowers
           </button>
           <button
-            className="Category_button"
+             className="Category_button neon-button neon-button__3"
             onClick={() => handleSelection("Beaches")}
           >
             Beaches
           </button>
           <button
-            className="Category_button"
+             className="Category_button neon-button neon-button__2"
             onClick={() => handleSelection("Cities")}
           >
             Cities
@@ -150,12 +150,12 @@ function Images() {
       {/* Pagination */}
       <div>
         {page > 1 && (
-          <button className="Category_button" onClick={() => setPage(page - 1)}>
+          <button  className="Category_button neon-button neon-button__2" onClick={() => setPage(page - 1)}>
             Previous
           </button>
         )}
         {page < totalPages && (                      // if page is less than total pages then Increamenting the page
-          <button className="Category_button" onClick={() => setPage(page + 1)}>
+          <button  className="Category_button neon-button neon-button__2" onClick={() => setPage(page + 1)}>
             Next
           </button>
         )}
